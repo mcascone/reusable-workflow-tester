@@ -1,0 +1,14 @@
+name: reusable workflow tester
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tester:
+    permissions:
+      contents: read
+    uses: mcascone/reusable-workflow-test/.github/workflows/reusable-1.yml@main
